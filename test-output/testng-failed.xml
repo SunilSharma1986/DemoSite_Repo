@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [DS Cucumber Test Automation Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="com.ds.cucumber.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="DS Application TestCases using Cucumber(failed)" parallel="methods">
+    <classes>
+      <class name="com.ds.cucum.runner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.ds.cucum.runner.TestRunner -->
+    </classes>
+  </test> <!-- DS Application TestCases using Cucumber(failed) -->
+</suite> <!-- Failed suite [DS Cucumber Test Automation Suite] -->

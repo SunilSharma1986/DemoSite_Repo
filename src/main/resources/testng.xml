@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DS Cucumber Test Automation Suite" parallel="methods" thread-count="2">
+
+
+	<listeners>
+		<listener class-name="com.ds.cucumber.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+	<test name="DS Application TestCases using Cucumber">
+		<classes>
+			<class name="com.ds.cucum.runner.TestRunner"></class>
+		</classes>
+	</test>
+	
+</suite>
