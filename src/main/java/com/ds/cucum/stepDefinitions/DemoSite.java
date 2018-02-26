@@ -30,7 +30,7 @@ public class DemoSite extends TstBase {
 	@When("^I enter the ([^\"]*) and ([^\"]*) and click on loginBtn$")
 	public void i_enter_valid_username_and_password_clicks_login_Btn(String userName, String passWord) throws Throwable {
 
-		
+		System.out.println("This step is for login");
 		
 			homePage = loginPage.validateLoginFlow(userName, passWord);
 		
